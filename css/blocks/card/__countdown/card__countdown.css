@@ -1,0 +1,26 @@
+.card__countdown {
+  position: absolute;
+  top: 36.2rem;
+  left: 64.9rem;
+}
+
+@media (max-width: 1200px) {
+  .card__countdown {
+    top: 22.6rem;
+    left: 31.5rem;
+  }
+}
+
+@media (max-width: 800px) {
+  .card__countdown {
+    top: 21.1rem;
+    left: 23.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .card__countdown {
+    top: 28.4rem;
+    left: 5.7rem;
+  }
+}

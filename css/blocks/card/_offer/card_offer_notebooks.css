@@ -1,0 +1,38 @@
+.card_offer_notebooks {
+  display: flex;
+}
+
+.card_offer_notebooks:after {
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4));
+}
+
+.card_offer_notebooks .card__text {
+  top: 14.5rem;
+  left: 11.2rem;
+  font-weight: 700;
+  font-size: 7rem;
+  line-height: 130%;
+}
+
+@media (max-width: 1200px) {
+  .card_offer_notebooks .card__text {
+    top: 8rem;
+    left: 8rem;
+    font-size: 4rem;
+  }
+}
+
+@media (max-width: 800px) {
+  .card_offer_notebooks .card__text {
+    top: 6.4rem;
+    font-size: 3rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .card_offer_notebooks .card__text {
+    top: 5rem;
+    left: 2.9rem;
+    font-size: 2.2rem;
+  }
+}

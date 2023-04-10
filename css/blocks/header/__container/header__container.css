@@ -1,0 +1,39 @@
+.header__container  {
+  display: grid;
+  grid-template-columns: min-content min-content 1fr min-content;
+  grid-template-areas: "logo menu search links";
+  gap: 9.7rem;
+  align-items: center;
+}
+
+@media (max-width: 1200px) {
+  .header__container {
+    grid-template-columns: min-content 1fr;
+    grid-template-rows: 6.1rem 5.4rem;
+    column-gap: 5rem;
+    row-gap: 3.4rem;
+    grid-template-areas:
+      "logo links"
+      "menu search";
+  }
+}
+
+@media (max-width: 800px) {
+  .header__container {
+    grid-template-rows: 4.4rem 4.2rem;
+    column-gap: 0;
+    row-gap: 2.9rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .header__container {
+    grid-template-columns: min-content 1fr;
+    grid-template-rows: 2.5rem 3rem 3rem;
+    row-gap: 2rem;
+    grid-template-areas:
+      "logo logo"
+      "menu links"
+      "search search";
+  }
+}

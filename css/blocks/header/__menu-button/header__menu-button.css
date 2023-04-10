@@ -1,0 +1,65 @@
+.header__menu-button {
+  position: relative;
+  grid-area: menu;
+  padding: 9px 28px 12px 61px;
+  background: #3670C7;
+  border: none;
+  border-radius: 1rem;
+  font-size: 2.2rem;
+  line-height: 150%;
+  color: var(--white);
+  justify-self: left;
+}
+
+.header__menu-button:before {
+  position: absolute;
+  top: 1.5rem;
+  left: 3rem;
+  display: block;
+  content: "";
+  width: 2.4rem;
+  height: 2.4rem;
+  background: url("../../../../assets/img/icons/menu.svg") no-repeat center center / cover;
+}
+
+@media (max-width: 1200px) {
+  .header__menu-button {
+    padding: 0.9rem 2.8rem 1.2rem 6.1rem;
+    border-radius: 1rem;
+    font-size: 2.2rem;
+  }
+
+  .header__menu-button:before {
+    top: 1.5rem;
+    left: 3rem;
+    width: 2.2rem;
+    height: 2.2rem;
+  }
+}
+
+@media (max-width: 800px) {
+  .header__menu-button {
+    padding: 0.7rem 2.1rem 1.1rem 4.9rem;
+    border-radius: 0.6rem;
+    font-size: 1.6rem;
+  }
+
+  .header__menu-button:before {
+    top: 0.8rem;
+    left: 2.1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .header__menu-button {
+    padding: 0.5rem 1.4rem 0.7rem 3.1rem;
+    border-radius: 0.4rem;
+    font-size: 1.2rem;
+  }
+
+  .header__menu-button:before {
+    left: 1.5rem;
+    width: 1.2rem;
+    height: 1.2rem;
+  }
+}

@@ -1,0 +1,11 @@
+.card_size_xl {
+  grid-column: span 4;
+  grid-row: span 2;
+}
+
+@media (max-width: 480px) {
+  .card_size_xl {
+    grid-column: span 2;
+    grid-row: span 1;
+  }
+}

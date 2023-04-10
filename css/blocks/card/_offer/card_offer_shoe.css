@@ -1,0 +1,26 @@
+.card_offer_shoe .card__discount {
+  top: 2rem;
+  left: 2rem;
+}
+
+@media (max-width: 1200px) {
+  .card_offer_shoe {
+    grid-row: 4 / 5;
+  }
+
+  .card_offer_shoe .card__discount {
+    top: 1rem;
+    left: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .card_offer_shoe {
+    grid-row: 3 / 4;
+  }
+
+  .card_offer_shoe .card__discount {
+    top: 0.5rem;
+    left: 0.5rem;
+  }
+}

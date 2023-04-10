@@ -1,0 +1,39 @@
+.card_offer_shoes .card__text {
+  top: 32.9rem;
+  left: 2rem;
+  width: 51rem;
+  padding: 2.4rem 2.6rem;
+  background: #38C0EB;
+  border-radius: 2rem;
+  font-size: 4rem;
+  line-height: 120%;
+}
+
+@media (max-width: 1200px) {
+  .card_offer_shoes .card__text {
+    top: 25.5rem;
+    width: 40.6rem;
+    padding: 2.4rem 2.7rem 3.2rem 2.5rem;
+    font-size: 3rem;
+  }
+}
+
+@media (max-width: 800px) {
+  .card_offer_shoes .card__text {
+    top: 20.7rem;
+    left: 1rem;
+    width: 36rem;
+    padding: 1.2rem 3rem 2rem 2.6rem;
+    font-size: 1.6rem;
+    line-height: 110%;
+  }
+}
+
+@media (max-width: 480px) {
+  .card_offer_shoes .card__text {
+    top: 16rem;
+    width: 26rem;
+    padding: 0.7rem 2.5rem 1.1rem 2.5rem;
+    font-size: 1.2rem;
+  }
+}

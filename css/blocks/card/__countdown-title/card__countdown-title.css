@@ -1,0 +1,31 @@
+.card__countdown-title {
+  position: absolute;
+  top: 33.6rem;
+  left: 82.3rem;
+  font-weight: 700;
+  font-size: 1.6rem;
+  line-height: 130%;
+}
+
+@media (max-width: 1200px) {
+  .card__countdown-title {
+    top: 19.5rem;
+    left: 41rem;
+  }
+}
+
+@media (max-width: 800px) {
+  .card__countdown-title {
+    top: 18.5rem;
+    left: 30.3rem;
+    font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .card__countdown-title {
+    top: 26.8rem;
+    left: 11rem;
+    font-size: 0.8rem;
+  }
+}

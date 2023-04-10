@@ -1,0 +1,141 @@
+@font-face {
+  font-family: Lato;
+  src: local("Lato Regular"), local("Lato-Regular"),
+  url("../assets/fonts/lato-regular.woff2"),
+  url("../assets/fonts/lato-regular.woff");
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: Lato;
+  src: local("Lato Bold"), local("Lato-Bold"),
+  url("../assets/fonts/lato-bold.woff2"),
+  url("../assets/fonts/lato-bold.woff");
+  font-weight: 700;
+}
+
+html {
+  position: relative;
+  box-sizing: border-box;
+  font-size: calc(10 * 100vw / 1920);
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  min-width: 320px;
+  min-height: 100vh;
+  font-family: 'Lato', sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  background-color: var(--white);
+  color: var(--white);
+}
+
+button {
+  padding: 0;
+  cursor: pointer;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+h1,
+h2,
+h3,
+p,
+figure,
+fieldset {
+  margin: 0;
+}
+
+iframe {
+  border: none;
+}
+
+fieldset {
+  padding: 0;
+  border: none;
+}
+
+.visually-hidden {
+  position: fixed;
+  transform: scale(0);
+  font-size: 0;
+}
+
+input {
+  border: none;
+}
+
+input:focus {
+  outline: none;
+}
+
+.text--style-bold {
+  font-weight: 700;
+  font-size: 4rem;
+  line-height: 130%;
+}
+
+.text--style-extrabold {
+  font-weight: 700;
+  font-size: 5.6rem;
+  line-height: 120%;
+}
+
+@media (max-width: 1200px) {
+  html {
+    font-size: calc(10 * 100vw / 1024);
+  }
+
+  .text--style-bold {
+    font-size: 3rem;
+  }
+
+  .text--style-extrabold {
+    font-size: 4rem;
+  }
+}
+
+@media (max-width: 800px) {
+  html {
+    font-size: calc(10 * 100vw / 768);
+  }
+
+  .text--style-bold {
+    font-size: 2.6rem;
+    line-height: 110%;
+  }
+
+  .text--style-extrabold {
+    font-size: 2.6rem;
+    line-height: 110%;
+  }
+}
+
+@media (max-width: 480px) {
+  html {
+    font-size: calc(10 * 100vw / 320);
+  }
+
+  .text--style-bold {
+    font-size: 1.6rem;
+  }
+
+  .text--style-extrabold {
+    font-size: 1.6rem;
+  }
+}

@@ -1,0 +1,5 @@
+.search {
+  position: relative;
+  grid-area: search;
+  width: 100%;
+}

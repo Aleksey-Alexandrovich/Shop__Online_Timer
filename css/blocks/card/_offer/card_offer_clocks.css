@@ -1,0 +1,50 @@
+.card_offer_clocks .card__discount {
+  top: 12rem;
+  left: 13.7rem;
+}
+
+.card_offer_clocks .card__text {
+  top: 6.7rem;
+  left: 1.4rem;
+  font-weight: 700;
+  font-size: 3rem;
+  line-height: 130%;
+}
+
+@media (max-width: 1200px) {
+  .card_offer_clocks .card__text {
+    top: 5.4rem;
+    font-size: 2.4rem;
+  }
+
+  .card_offer_clocks .card__discount {
+    top: 10.4rem;
+    left: 11.9rem;
+  }
+}
+
+@media (max-width: 800px) {
+  .card_offer_clocks .card__text {
+    top: 1.5rem;
+    left: 1.5rem;
+    font-size: 1.6rem;
+  }
+
+  .card_offer_clocks .card__discount {
+    top: 7rem;
+    left: 8rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .card_offer_clocks .card__text {
+    top: 1.8rem;
+    left: 1rem;
+    font-size: 1.2rem;
+  }
+
+  .card_offer_clocks .card__discount {
+    top: 6.5rem;
+    left: 7.5rem;
+  }
+}

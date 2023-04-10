@@ -1,0 +1,51 @@
+.card_offer_chemicals .card__discount {
+  top: 2rem;
+  left: 2rem;
+}
+
+.card_offer_chemicals .card__text {
+  top: 13rem;
+  left: 3rem;
+  width: 18.1rem;
+  font-weight: 700;
+  font-size: 3rem;
+  line-height: 130%;
+}
+
+@media (max-width: 1200px) {
+  .card_offer_chemicals .card__discount {
+    top: 1rem;
+    left: 1rem;
+  }
+
+  .card_offer_chemicals .card__text {
+    top: 15.1rem;
+    left: 1rem;
+    width: 19rem;
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 800px) {
+  .card_offer_chemicals .card__text {
+    top: 9.4rem;
+    left: 1.5rem;
+    width: 14.7rem;
+    font-size: 1.6rem;
+    line-height: 120%;
+  }
+}
+
+@media (max-width: 480px) {
+  .card_offer_chemicals .card__discount {
+    top: 0.5rem;
+    left: 0.5rem;
+  }
+
+  .card_offer_chemicals .card__text {
+    top: 7rem;
+    left: 0.9rem;
+    width: 11.1rem;
+    font-size: 1.2rem;
+  }
+}

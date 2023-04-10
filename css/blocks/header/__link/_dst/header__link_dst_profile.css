@@ -1,0 +1,32 @@
+.header__link--dst-profile:before {
+  left: 1.6rem;
+  bottom: 2.5rem;
+  width: 3.6rem;
+  height: 3.6rem;
+  background: url("../../../../../assets/img/icons/profile.svg") no-repeat center center / cover;
+}
+
+@media (max-width: 1200px) {
+  .header__link--dst-profile:before {
+    left: 1.6rem;
+    bottom: 2.5rem;
+  }
+}
+
+@media (max-width: 800px) {
+  .header__link--dst-profile:before {
+    left: 1.1rem;
+    bottom: 1.4rem;
+    width: 3rem;
+    height: 3rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .header__link--dst-profile:before {
+    left: 0;
+    bottom: 0;
+    width: 3rem;
+    height: 3rem;
+  }
+}

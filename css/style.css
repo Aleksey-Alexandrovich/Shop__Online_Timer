@@ -1,0 +1,52 @@
+@import "variables.css";
+@import "normalize.css";
+@import "global.css";
+
+@import "blocks/container/container.css";
+
+@import "blocks/header/header.css";
+@import "blocks/header/__logo/header__logo.css";
+@import "blocks/header/__menu-button/header__menu-button.css";
+@import "blocks/header/__container/header__container.css";
+@import "blocks/header/__links/header__links.css";
+@import "blocks/header/__link/header__link.css";
+@import "blocks/header/__link/_dst/header__link_dst_cart.css";
+@import "blocks/header/__link/_dst/header__link_dst_favourites.css";
+@import "blocks/header/__link/_dst/header__link_dst_profile.css";
+@import "blocks/header/__cart-counter/header__cart-counter.css";
+
+@import "blocks/search/search.css";
+@import "blocks/search/__input/search__input.css";
+@import "blocks/search/__button/search__button.css";
+
+@import "blocks/hero/hero.css";
+
+@import "blocks/cards/cards.css";
+
+@import "blocks/card/card.css";
+@import "blocks/card/__image/card__image.css";
+@import "blocks/card/__text/card__text.css";
+@import "blocks/card/__discount/card__discount.css";
+
+@import "blocks/card/_size/card_size_l.css";
+@import "blocks/card/_size/card_size_mh.css";
+@import "blocks/card/_size/card_size_mw.css";
+@import "blocks/card/_size/card_size_xl.css";
+@import "blocks/card/_size/card_size_xxl.css";
+
+@import "blocks/card/_offer/card_offer_2022.css";
+@import "blocks/card/_offer/card_offer_books.css";
+@import "blocks/card/_offer/card_offer_clocks.css";
+@import "blocks/card/_offer/card_offer_gifts.css";
+@import "blocks/card/_offer/card_offer_notebook.css";
+@import "blocks/card/_offer/card_offer_notebooks.css";
+@import "blocks/card/_offer/card_offer_shoe.css";
+@import "blocks/card/_offer/card_offer_shoes.css";
+@import "blocks/card/_offer/card_offer_balls.css";
+@import "blocks/card/_offer/card_offer_chemicals.css";
+@import "blocks/card/_offer/card_offer_dress.css";
+
+@import "blocks/card/__countdown/card__countdown.css";
+@import "blocks/card/__countdown-title/card__countdown-title.css";
+@import "blocks/card/__countdown-text/card__countdown-text.css";
+@import "blocks/card/__countdown-number/card__countdown-number.css";

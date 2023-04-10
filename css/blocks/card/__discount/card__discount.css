@@ -1,0 +1,21 @@
+.card__discount {
+  position: absolute;
+  width: 8.8rem;
+  height: 8.8rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #FFBD13;
+  border-radius: 50%;
+  font-weight: 700;
+  font-size: 3rem;
+  line-height: 130%;
+}
+
+@media (max-width: 800px) {
+  .card__discount {
+    width: 5rem;
+    height: 5rem;
+    font-size: 1.6rem;
+  }
+}

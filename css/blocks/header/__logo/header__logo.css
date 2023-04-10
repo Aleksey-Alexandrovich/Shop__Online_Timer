@@ -1,0 +1,32 @@
+.header__logo {
+  grid-area: logo;
+  align-self: end;
+  width: 19rem;
+  height: 4.1rem;
+  margin-right: 2.6rem;
+}
+
+.header__logo > img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+@media (max-width: 1200px) {
+  .header__logo {
+    margin-right: 0;
+  }
+}
+
+@media (max-width: 800px) {
+  .header__logo {
+    width: 16.5rem;
+    height: 3.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .header__logo {
+    width: 11.4rem;
+    height: 2.5rem;
+  }
+}

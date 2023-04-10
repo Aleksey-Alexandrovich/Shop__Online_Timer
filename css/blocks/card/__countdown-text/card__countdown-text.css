@@ -1,0 +1,39 @@
+.card__countdown-text {
+  font-weight: 700;
+  font-size: 3.2rem;
+  line-height: 130%;
+}
+
+.card__countdown-text:not(:last-child) {
+  margin-right: 3rem;
+}
+
+@media (max-width: 1200px) {
+  .card__countdown-text {
+    font-size: 2rem;
+  }
+
+  .card__countdown-text:not(:last-child) {
+    margin-right: 2rem;
+  }
+}
+
+@media (max-width: 800px) {
+  .card__countdown-text {
+    font-size: 1.6rem;
+  }
+
+  .card__countdown-text:not(:last-child) {
+    margin-right: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .card__countdown-text {
+    font-size: 1.2rem;
+  }
+
+  .card__countdown-text:not(:last-child) {
+    margin-right: 0.8rem;
+  }
+}

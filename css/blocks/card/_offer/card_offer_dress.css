@@ -1,0 +1,35 @@
+.card_offer_dress .card__discount {
+  top: 40.8rem;
+  left: 13.7rem;
+}
+
+@media (max-width: 1200px) {
+  .card_offer_dress {
+    grid-column: 3 /4;
+    grid-row: 5 / 7;
+  }
+
+  .card_offer_dress .card__discount {
+    top: 31.2rem;
+    left: 9.5rem;
+  }
+}
+
+@media (max-width: 800px) {
+  .card_offer_dress .card__discount {
+    top: 21.3rem;
+    left: 12.2rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .card_offer_dress {
+    grid-column: 1 / 2;
+    grid-row: 7 / 9;
+  }
+
+  .card_offer_dress .card__discount {
+    top: 15rem;
+    left: 7rem;
+  }
+}

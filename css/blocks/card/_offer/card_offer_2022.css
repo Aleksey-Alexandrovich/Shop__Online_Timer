@@ -1,0 +1,42 @@
+.card_offer_2022 .card__text {
+  top: 35.8rem;
+  left: 5rem;
+  padding: 3rem 4.3rem;
+  background: #FFFFFF;
+  border-radius: 2rem;
+  font-weight: 700;
+  font-size: 4rem;
+  line-height: 120%;
+  text-transform: uppercase;
+  color: #F91155;
+}
+
+@media (max-width: 1200px) {
+  .card_offer_2022 .card__text {
+    top: 29.6rem;
+    left: 3rem;
+    padding: 2.4rem 4.6rem;
+    border-radius: 2rem;
+    font-size: 3rem;
+  }
+}
+
+@media (max-width: 800px) {
+  .card_offer_2022 .card__text {
+    top: 19rem;
+    left: 2.6rem;
+    padding: 2.2rem 3.3rem;
+    border-radius: 1.2rem;
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .card_offer_2022 .card__text {
+    top: 8.3rem;
+    left: 1.5rem;
+    padding: 0.9rem 4.1rem;
+    border-radius: 0.6rem;
+    font-size: 1.2rem;
+  }
+}

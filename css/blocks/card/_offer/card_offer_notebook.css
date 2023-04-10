@@ -1,0 +1,51 @@
+.card_offer_notebook .card__discount {
+  top: 12rem;
+  left: 44.2rem;
+}
+
+.card_offer_notebook .card__text {
+  top: 13.6rem;
+  left: 3rem;
+  font-weight: 700;
+  font-size: 4rem;
+  line-height: 130%;
+}
+
+@media (max-width: 1200px) {
+  .card_offer_notebook .card__text {
+    top: 11.9rem;
+    font-size: 3rem;
+  }
+
+  .card_offer_notebook .card__discount {
+    top: 9.6rem;
+    left: 36.6rem;
+  }
+}
+
+@media (max-width: 800px) {
+  .card_offer_notebook .card__text {
+    top: 8.7rem;
+    left: 2.1rem;
+    font-size: 1.6rem;
+    line-height: 120%;
+  }
+
+  .card_offer_notebook .card__discount {
+    top: 6.6rem;
+    left: 24rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .card_offer_notebook .card__text {
+    top: 8.8rem;
+    left: 1rem;
+    font-size: 1.2rem;
+  }
+
+  .card_offer_notebook .card__discount {
+    top: 6.3rem;
+    left: 22.5rem;
+  }
+}
