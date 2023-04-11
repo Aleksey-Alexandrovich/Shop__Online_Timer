@@ -1,105 +1,164 @@
 <!DOCTYPE html>
 <html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>ShopOnline</title>
+  </head>
 
-<head>
-	<meta charset="UTF-8" />
-	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-	<meta http-equiv="X-UA-Compatible" content="ie=edge" />
-	<link rel="preconnect" href="https://fonts.googleapis.com" />
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-	<link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet" />
-	<link rel="stylesheet" href="css/style.css" />
-	<title>ShopOnline</title>
-</head>
+  <body class="page">
+    <header class="header">
+      <div class="container header__container">
+        <a class="header__logo" href="#"
+          ><img src="assets/img/logo.svg" alt="Лого"
+        /></a>
 
-<body class="page">
-	<header class="header">
-		<div class="container header__container">
-			<a class="header__logo" href="#"><img src="assets/img/logo.svg" alt="Лого" /></a>
+        <button class="header__menu-button" type="button">Меню</button>
 
-			<button class="header__menu-button" type="button">Меню</button>
+        <form class="search" action="#" method="post">
+          <input
+            class="search__input"
+            type="text"
+            aria-label="Поиск"
+            placeholder="Я ищу..."
+          />
+          <button class="search__button" type="submit"></button>
+        </form>
 
-			<form class="search" action="#" method="post">
-				<input class="search__input" type="text" aria-label="Поиск" placeholder="Я ищу..." />
-				<button class="search__button" type="submit"></button>
-			</form>
+        <div class="header__links">
+          <a class="header__link header__link--dst-profile" href="">Профиль</a>
+          <a class="header__link header__link--dst-cart" href=""
+            >Корзина<span class="header__cart-counter">2</span></a
+          >
+          <a class="header__link header__link--dst-favourites" href=""
+            >Избранное</a
+          >
+        </div>
+      </div>
+    </header>
 
-			<div class="header__links">
-				<a class="header__link header__link--dst-profile" href="">Профиль</a>
-				<a class="header__link header__link--dst-cart" href="">Корзина<span class="header__cart-counter">2</span></a>
-				<a class="header__link header__link--dst-favourites" href="">Избранное</a>
-			</div>
-		</div>
-	</header>
+    <main class="main">
+      <section class="hero">
+        <div class="container">
+          <h1 class="page__title visually-hidden">
+            Интернет-магазин ShopOnline
+          </h1>
+          <ul class="cards">
+            <li class="card card_offer_notebooks card_size_xxl">
+              <img
+                class="card__image"
+                src="assets/img/promo-cards/notebooks.jpg"
+                alt="Ноутбук"
+              />
+              <p class="card__text">-50% на все ноутбуки</p>
+              <p class="card__countdown-title">До конца акции:</p>
+              <!-- 1682072959447 -->
+              <div
+                data-deadline="1681268224661"
+                class="card__countdown timer"
+              ></div>
+            </li>
+            <li class="card card_offer_books">
+              <img
+                class="card__image"
+                src="assets/img/promo-cards/book.jpg"
+                alt="Книга"
+              />
+              <p class="card__text">
+                <span class="text text--style-bold">Книга</span> – лучший
+                подарок
+              </p>
+            </li>
+            <li class="card card_offer_clocks">
+              <img
+                class="card__image"
+                src="assets/img/promo-cards/clocks.jpg"
+                alt="Часы"
+              />
+              <p class="card__text">Время скидок!</p>
+              <div class="card__discount">-25%</div>
+            </li>
+            <li class="card card_offer_shoes card_size_l">
+              <img
+                class="card__image"
+                src="assets/img/promo-cards/shoes.jpg"
+                alt="Кроссовки"
+              />
+              <p class="card__text">
+                Вторая пара кроссовок
+                <span class="text text--style-extrabold">в&nbsp;подарок!</span>
+              </p>
+            </li>
+            <li class="card card_offer_gifts card_size_mw">
+              <img
+                class="card__image"
+                src="assets/img/promo-cards/gifts.jpg"
+                alt="Подарки"
+              />
+              <p class="card__text">Идеи новогодних подарков</p>
+            </li>
+            <li class="card card_offer_shoe card_size_mw">
+              <img
+                class="card__image"
+                src="assets/img/promo-cards/shoe.jpg"
+                alt="Ботинок"
+              />
+              <div class="card__discount">-40%</div>
+            </li>
+            <li class="card card_offer_notebook card_size_mw">
+              <img
+                class="card__image"
+                src="assets/img/promo-cards/notebook.jpg"
+                alt="Ноутбук"
+              />
+              <p class="card__text">Выгодно в декабре!</p>
+              <div class="card__discount">-15%</div>
+            </li>
+            <li class="card card_offer_2022 card_size_xl">
+              <img
+                class="card__image"
+                src="assets/img/promo-cards/2022.jpg"
+                alt="Число 2022 и подарочная коробка"
+              />
+              <p class="card__text">Новогодние украшения</p>
+            </li>
+            <li class="card card_offer_dress card_size_mh">
+              <img
+                class="card__image"
+                src="assets/img/promo-cards/dress.jpg"
+                alt="Девшка в платье"
+              />
+              <div class="card__discount">-55%</div>
+            </li>
+            <li class="card card_offer_chemicals">
+              <img
+                class="card__image"
+                src="assets/img/promo-cards/chemicals.jpg"
+                alt="Чистящее средство в руке"
+              />
+              <p class="card__text">На бытовую химию</p>
+              <div class="card__discount">-25%</div>
+            </li>
+            <li class="card card_offer_balls">
+              <img
+                class="card__image"
+                src="assets/img/promo-cards/christmas-balls.jpg"
+                alt="Елочные шары"
+              />
+            </li>
+          </ul>
+        </div>
+      </section>
+    </main>
 
-	<main class="main">
-		<section class="hero">
-			<div class="container">
-				<h1 class="page__title visually-hidden">
-					Интернет-магазин ShopOnline
-				</h1>
-				<ul class="cards">
-					<li class="card card_offer_notebooks card_size_xxl">
-						<img class="card__image" src="assets/img/promo-cards/notebooks.jpg" alt="Ноутбук" />
-						<p class="card__text">-50% на все ноутбуки</p>
-						<p class="card__countdown-title">До конца акции:</p>
-						<!-- 1682072959447 -->
-						<div data-deadline="1681173722428" class="card__countdown timer"></div>
-					</li>
-					<li class="card card_offer_books">
-						<img class="card__image" src="assets/img/promo-cards/book.jpg" alt="Книга" />
-						<p class="card__text">
-							<span class="text text--style-bold">Книга</span> – лучший
-							подарок
-						</p>
-					</li>
-					<li class="card card_offer_clocks">
-						<img class="card__image" src="assets/img/promo-cards/clocks.jpg" alt="Часы" />
-						<p class="card__text">Время скидок!</p>
-						<div class="card__discount">-25%</div>
-					</li>
-					<li class="card card_offer_shoes card_size_l">
-						<img class="card__image" src="assets/img/promo-cards/shoes.jpg" alt="Кроссовки" />
-						<p class="card__text">
-							Вторая пара кроссовок
-							<span class="text text--style-extrabold">в&nbsp;подарок!</span>
-						</p>
-					</li>
-					<li class="card card_offer_gifts card_size_mw">
-						<img class="card__image" src="assets/img/promo-cards/gifts.jpg" alt="Подарки" />
-						<p class="card__text">Идеи новогодних подарков</p>
-					</li>
-					<li class="card card_offer_shoe card_size_mw">
-						<img class="card__image" src="assets/img/promo-cards/shoe.jpg" alt="Ботинок" />
-						<div class="card__discount">-40%</div>
-					</li>
-					<li class="card card_offer_notebook card_size_mw">
-						<img class="card__image" src="assets/img/promo-cards/notebook.jpg" alt="Ноутбук" />
-						<p class="card__text">Выгодно в декабре!</p>
-						<div class="card__discount">-15%</div>
-					</li>
-					<li class="card card_offer_2022 card_size_xl">
-						<img class="card__image" src="assets/img/promo-cards/2022.jpg" alt="Число 2022 и подарочная коробка" />
-						<p class="card__text">Новогодние украшения</p>
-					</li>
-					<li class="card card_offer_dress card_size_mh">
-						<img class="card__image" src="assets/img/promo-cards/dress.jpg" alt="Девшка в платье" />
-						<div class="card__discount">-55%</div>
-					</li>
-					<li class="card card_offer_chemicals">
-						<img class="card__image" src="assets/img/promo-cards/chemicals.jpg" alt="Чистящее средство в руке" />
-						<p class="card__text">На бытовую химию</p>
-						<div class="card__discount">-25%</div>
-					</li>
-					<li class="card card_offer_balls">
-						<img class="card__image" src="assets/img/promo-cards/christmas-balls.jpg" alt="Елочные шары" />
-					</li>
-				</ul>
-			</div>
-		</section>
-	</main>
-
-	<script defer src="main.js"></script>
-</body>
-
+    <script defer src="main.js"></script>
+  </body>
 </html>

@@ -27,9 +27,7 @@ const compareDate = () => {
   const a = (new Date(+deadLine).getTime()) + (offset * 60 * 1000) + (3 * 60 * 60 * 1000);
 
   return a - Date.now();
-  const maxTime = new Date(0);
-  maxTime.setHours(14, 59, 59, 0);
-  console.log(maxTime);
+  
 };
 
 const setText = (element, text) => {
@@ -79,39 +77,22 @@ const renderClock = () => {
   const hours = isLess ? date.getMinutes() : date.getHours();
   const minutes = isLess ? date.getSeconds() : date.getMinutes();
 
-
-  if (days === 1 || (days > 20 && days % 10 == 1)) {
-    setFirst(isLess ? 'час' : 'день');
-    // daysTitle.innerText = 'день';
-  } else if (days > 1 && days < 5 || (days > 20 && days % 10 > 1 && days % 10 < 5)) {
-    setFirst(isLess ? 'часа' : 'дня');
-    // daysTitle.innerText = 'дня';
-  } else {
-    setFirst(isLess ? 'часов' : 'дней');
-    // daysTitle.innerText = 'дней';
+  function convert(num,oneForm,divideForm, multiplyForm) {
+    if (num === 1 || (num > 20 && num % 10 == 1)) {
+      return oneForm;
+    } else if (num > 1 && num < 5 || (num > 20 && num % 10 > 1 && num % 10 < 5)) {
+      return divideForm;
+    } else {
+      return multiplyForm;
+    }
   }
 
-  if (hours == 1 || hours == 21) {
-    setSecond(isLess ? 'минута' : 'час');
-    // hoursTitle.innerText = 'час';
-  } else if (hours > 1 && hours < 5 || (hours > 20 && hours % 10 > 1 && hours % 10 < 5)) {
-    setSecond(isLess ? 'минуты' : 'часа');
-    // hoursTitle.innerText = 'часа';
-  } else {
-    setSecond(isLess ? 'минут' : 'часов');
-    // hoursTitle.innerText = 'часов';
-  }
+  setFirst(isLess ? convert(days, "час", 'часа', 'часов') : convert(days, 'день', 'дня', 'дней'));
 
-  if (minutes == 1 || (minutes > 20 && minutes % 10 == 1)) {
-    setThird(isLess ? 'секунда' : 'минута');
-    // minutesTitle.innerText = 'минута';
-  } else if (minutes > 1 && minutes < 5 || (minutes > 20 && minutes % 10 > 1 && minutes % 10 < 5)) {
-    setThird(isLess ? 'секунды' : 'минуты');
-    // minutesTitle.innerText = 'минуты';
-  } else {
-    setThird(isLess ? 'секунд' : 'минут');
-    // minutesTitle.innerText = 'минут';
-  }
+  setSecond(isLess ? convert(hours, "минута", 'минуты', 'минут') : convert(hours, 'час', 'часа', 'часов'));
+
+  setThird(isLess ? convert(minutes, "секунда", 'секунды', 'секунд') : convert(minutes, 'минута', 'минуты', 'минут'));
+ 
 
   daysElement.textContent = days;
   hoursElement.textContent = hours;
